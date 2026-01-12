@@ -1,7 +1,7 @@
 import { NextIntlClientProvider } from "next-intl";
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
-import "../src/0-app/styles/globals.css";
+// import "../src/0-app/styles/globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
