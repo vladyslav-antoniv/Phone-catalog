@@ -1,14 +1,73 @@
 {
-  "test": "Test",
-  "load-more": "Load more",
-  "links": {
-    "product": "Product",
+  "Navigation": {
+    "home": "Home",
     "phones": "Phones",
     "tablets": "Tablets",
-    "accessories": "Accessories",
-    "favourites": "Favourites"
+    "accessories": "Accessories"
   },
-  "hero-section": {
-    "title": "Welcome to Nice Gadgets store!"
+  "Header": {
+    "searchPlaceholder": "Search...",
+    "cart": "Cart"
+  },
+  "Home": {
+    "title": "Welcome to Nice Gadgets",
+    "subtitle": "Best prices for best devices",
+    "shopNow": "Shop now",
+    "newModels": "Brand new models",
+    "hotPrices": "Hot prices"
+  },
+  "Catalog": {
+    "titlePhones": "Mobile Phones",
+    "titleTablets": "Tablets",
+    "titleAccessories": "Accessories",
+    "modelsCount": "{count} models",
+    "sortBy": "Sort by",
+    "sort": {
+      "newest": "Newest",
+      "cheapest": "Cheapest",
+      "expensive": "Most Expensive"
+    },
+    "filters": {
+      "brand": "Brand",
+      "price": "Price",
+      "reset": "Reset filters"
+    },
+    "noResults": "No products found matching your criteria."
+  },
+  "Product": {
+    "addToCart": "Add to cart",
+    "added": "Added",
+    "screen": "Screen",
+    "resolution": "Resolution",
+    "processor": "Processor",
+    "ram": "RAM",
+    "capacity": "Capacity",
+    "camera": "Camera",
+    "zoom": "Zoom",
+    "cell": "Cell"
+  },
+  "Cart": {
+    "title": "Cart",
+    "empty": "Your cart is empty",
+    "emptyDescription": "Looks like you haven't added anything yet.",
+    "total": "Total",
+    "checkout": "Checkout",
+    "continueShopping": "Continue shopping",
+    "itemsCount": "Total for {count} items"
+  },
+  "Footer": {
+    "github": "Github",
+    "contacts": "Contacts",
+    "rights": "Rights",
+    "backToTop": "Back to top"
+  },
+  "NotFound": {
+    "title": "Page not found",
+    "description": "Sorry, we couldn’t find the page you’re looking for.",
+    "button": "Go back home"
+  },
+  "Common": {
+    "loading": "Loading...",
+    "error": "Something went wrong"
   }
 }

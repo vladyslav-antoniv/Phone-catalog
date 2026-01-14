@@ -1,15 +1,73 @@
 {
-  "test": "Тест",
-  "load-more": "Завантажити ще",
-   "links":{
-    "product":"Продукт",
+  "Navigation": {
+    "home": "Головна",
     "phones": "Телефони",
     "tablets": "Планшети",
-    "accessories": "Аксесуари",
-    "favourites": "Улюблені",
+    "accessories": "Аксесуари"
+  },
+  "Header": {
+    "searchPlaceholder": "Пошук...",
     "cart": "Кошик"
   },
-  "hero-section": {
-    "title": "Ласкаво просимо до нашого магазину!"
+  "Home": {
+    "title": "Ласкаво просимо в Nice Gadgets",
+    "subtitle": "Найкращі ціни на найкращі пристрої",
+    "shopNow": "Купити зараз",
+    "newModels": "Нові моделі",
+    "hotPrices": "Гарячі ціни"
+  },
+  "Catalog": {
+    "titlePhones": "Мобільні телефони",
+    "titleTablets": "Планшети",
+    "titleAccessories": "Аксесуари",
+    "modelsCount": "{count} моделей",
+    "sortBy": "Сортувати за",
+    "sort": {
+      "newest": "Новинки",
+      "cheapest": "Від дешевих",
+      "expensive": "Від дорогих"
+    },
+    "filters": {
+      "brand": "Бренд",
+      "price": "Ціна",
+      "reset": "Скинути фільтри"
+    },
+    "noResults": "Товарів за вашим запитом не знайдено."
+  },
+  "Product": {
+    "addToCart": "В кошик",
+    "added": "Додано",
+    "screen": "Екран",
+    "resolution": "Роздільна здатність",
+    "processor": "Процесор",
+    "ram": "ОЗП",
+    "capacity": "Пам'ять",
+    "camera": "Камера",
+    "zoom": "Зум",
+    "cell": "Зв'язок"
+  },
+  "Cart": {
+    "title": "Кошик",
+    "empty": "Ваш кошик порожній",
+    "emptyDescription": "Схоже, ви ще нічого не додали.",
+    "total": "Всього",
+    "checkout": "Оформити замовлення",
+    "continueShopping": "Продовжити покупки",
+    "itemsCount": "Всього за {count} товарів"
+  },
+  "Footer": {
+    "github": "Github",
+    "contacts": "Контакти",
+    "rights": "Права",
+    "backToTop": "Вгору"
+  },
+  "NotFound": {
+    "title": "Сторінку не знайдено",
+    "description": "Вибачте, ми не можемо знайти сторінку, яку ви шукаєте.",
+    "button": "На головну"
+  },
+  "Common": {
+    "loading": "Завантаження...",
+    "error": "Щось пішло не так"
   }
 }

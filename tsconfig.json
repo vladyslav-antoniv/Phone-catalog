@@ -19,7 +19,15 @@
       }
     ],
     "paths": {
-      "@/*": ["./*"]
+      "@/*": ["./*"],
+      "@/src/*": ["./*"],
+      "@/src/app*": ["./src/0-app*"],
+      "@/pages/*": ["./src/0-pages/*"],
+      "@/features/*": ["./src/2-features/*"],
+      "@/entities/*": ["./src/3-entities/*"],
+      "@/widgets/*": ["./src/1-widgets/*"],
+      "@/shared/*": ["./src/4-shared/*"],
+      "@/lib/*": ["./src/4-shared/api/lib/*"],
     }
   },
   "include": [
