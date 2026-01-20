@@ -21,6 +21,22 @@ export function Header() {
 
       <div className="flex flex-row items-center gap-4 px-4">
         <ThemeSwitcher className="hidden md:flex" />
+
+        <Link 
+              href="/favourites" 
+              className="flex items-center justify-center hidden md:flex"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <Heart className="w-6 h-6" />
+            </Link>
+
+            <Link 
+              href="/cart" 
+              className="flex items-center justify-center hidden md:flex"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <ShoppingBag className="w-6 h-6" />
+            </Link>
         
         <BurgerMenu
           className="md:hidden cursor-pointer"

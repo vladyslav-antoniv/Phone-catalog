@@ -4,6 +4,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "@/src/app/styles/globals.css";
+import { Footer } from "@/widgets/Footer";
+import { AuthListener, StoreProvider } from "@/src/app/providers/StoreProvider";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -34,15 +36,19 @@ export default async function LocaleLayout({
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         <NextIntlClientProvider>
-          <ThemeProvider
-            attribute="class"
-            defaultTheme="system"
-            enableSystem
-            disableTransitionOnChange
-          >
-            <Header />
-            <main className="">{children}</main>
-          </ThemeProvider>
+          <StoreProvider>
+            <AuthListener />
+            <ThemeProvider
+              attribute="class"
+              defaultTheme="system"
+              enableSystem
+              disableTransitionOnChange
+            >
+              <Header />
+              <main className="">{children}</main>
+              <Footer />
+            </ThemeProvider>
+          </StoreProvider>
         </NextIntlClientProvider>
       </body>
     </html>

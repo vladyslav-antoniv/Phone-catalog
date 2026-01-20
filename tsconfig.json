@@ -28,6 +28,7 @@
       "@/widgets/*": ["./src/1-widgets/*"],
       "@/shared/*": ["./src/4-shared/*"],
       "@/lib/*": ["./src/4-shared/api/lib/*"],
+      "@/supabase/*": ["./src/4-shared/api/supabase/*"],
     }
   },
   "include": [
