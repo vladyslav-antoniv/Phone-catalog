@@ -1,15 +1,19 @@
 "use client";
 
-import { HeaderNavbar } from "@/shared/ui/0-Header"; // Check your import path
+import { HeaderNavbar } from "@/shared/ui/0-Header";
 import { ThemeSwitcher } from "@/features/theme/ThemeSwitcher";
 import { Logo } from "@/shared/ui/Logo";
 import { BurgerMenu } from "../4-shared/ui/0-Header/BurgerMenu";
 import { useState } from "react";
-import Link from 'next/link';
-import { Heart, ShoppingBag } from "lucide-react"; // Added ShoppingBag
+import { Link } from "@/shared/router/navigation";
+import { Heart, ShoppingBag, SquareUserRound } from "lucide-react";
+import { useAppSelector } from "@/shared/api/lib/hooks";
 
 export function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const user = useAppSelector((state) => state.auth.user);
+  const href = user ? "/profile" : "/auth";
 
   return (
     <div className="bg-background sticky top-0 z-50 w-full mx-auto flex justify-between border-b border-border relative">
@@ -25,7 +29,6 @@ export function Header() {
         <Link 
               href="/favourites" 
               className="flex items-center justify-center hidden md:flex"
-              onClick={() => setIsMenuOpen(false)}
             >
               <Heart className="w-6 h-6" />
             </Link>
@@ -33,9 +36,15 @@ export function Header() {
             <Link 
               href="/cart" 
               className="flex items-center justify-center hidden md:flex"
-              onClick={() => setIsMenuOpen(false)}
             >
               <ShoppingBag className="w-6 h-6" />
+            </Link>
+
+            <Link 
+              href={href}
+              className="flex items-center justify-center hidden md:flex"
+            >
+              <SquareUserRound className="w-6 h-6" />
             </Link>
         
         <BurgerMenu
@@ -50,8 +59,16 @@ export function Header() {
           
           <div className="flex flex-1 flex-col items-center justify-start mt-10 gap-8">
             <HeaderNavbar className="flex flex-col gap-6 items-center " />
-            
+            <Link 
+              href={href}
+              className="flex items-center justify-center"
+              onClick={() => setIsMenuOpen(false)}
+            >
+              <SquareUserRound className="w-6 h-6" />
+            </Link>
             <div className="md:hidden">
+
+              
                 <ThemeSwitcher />
             </div>
           </div>
