@@ -12,12 +12,14 @@ import {
 import storage from 'redux-persist/lib/storage';
 import authReducer from '@/features/auth/model/authSlice';
 import productReducer from '@/entities/product/model/productSlice';
-import cartReducer from '@/entities/cart/madel/cartSlice';
+import cartReducer from '@/entities/cart/model/cartSlice';
+import favouritesReducer from '@/entities/favourite/model/favSlice';
 
 const rootReducer = combineReducers({
   auth: authReducer,
   products: productReducer,
   cart: cartReducer,
+  favourites: favouritesReducer,
 });
 
 const persistConfig = {

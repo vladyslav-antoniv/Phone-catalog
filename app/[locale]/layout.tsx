@@ -6,7 +6,8 @@ import { ThemeProvider } from "next-themes";
 import "@/src/app/styles/globals.css";
 import { Footer } from "@/widgets/Footer";
 import { AuthListener, StoreProvider } from "@/src/app/providers/StoreProvider";
-import { BreadCrumbs } from '@/widgets/BreadCrumbs'
+import { BreadCrumbs } from "@/widgets/BreadCrumbs";
+import { Toaster } from "react-hot-toast";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -49,6 +50,17 @@ export default async function LocaleLayout({
               <BreadCrumbs />
               <main className="">{children}</main>
               <Footer />
+              <Toaster
+                position="bottom-right"
+                reverseOrder={false}
+                toastOptions={{
+                  duration: 3000,
+                  style: {
+                    background: "#333",
+                    color: "#fff",
+                  },
+                }}
+              />
             </ThemeProvider>
           </StoreProvider>
         </NextIntlClientProvider>
