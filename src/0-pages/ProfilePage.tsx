@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { useRouter } from "next/navigation";
 import { useAppDispatch, useAppSelector } from "@/shared/api/lib/hooks";
 import { logout } from "@/features/auth/model/authSlice";
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui/Buttons/button";
 import { Loader2, LogOut, Mail, User as UserIcon } from "lucide-react";
 
 export default function ProfilePage() {

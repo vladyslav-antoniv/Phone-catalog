@@ -6,6 +6,7 @@ import { ThemeProvider } from "next-themes";
 import "@/src/app/styles/globals.css";
 import { Footer } from "@/widgets/Footer";
 import { AuthListener, StoreProvider } from "@/src/app/providers/StoreProvider";
+import { BreadCrumbs } from '@/widgets/BreadCrumbs'
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" });
 
@@ -45,6 +46,7 @@ export default async function LocaleLayout({
               disableTransitionOnChange
             >
               <Header />
+              <BreadCrumbs />
               <main className="">{children}</main>
               <Footer />
             </ThemeProvider>

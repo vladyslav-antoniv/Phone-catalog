@@ -11,15 +11,19 @@ import {
 } from 'redux-persist';
 import storage from 'redux-persist/lib/storage';
 import authReducer from '@/features/auth/model/authSlice';
+import productReducer from '@/entities/product/model/productSlice';
+import cartReducer from '@/entities/cart/madel/cartSlice';
 
 const rootReducer = combineReducers({
   auth: authReducer,
+  products: productReducer,
+  cart: cartReducer,
 });
 
 const persistConfig = {
   key: 'root',
   storage,
-  whitelist: ['cart', 'favourites'],
+  whitelist: ['cart', 'favourites', 'auth'],
 };
 
 const persistedReducer = persistReducer(persistConfig, rootReducer);

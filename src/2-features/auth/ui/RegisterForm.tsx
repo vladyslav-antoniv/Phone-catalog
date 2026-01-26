@@ -9,7 +9,7 @@ import { useAppDispatch, useAppSelector } from "@/shared/api/lib/hooks";
 import { register as registerThunk } from "../model/authSlice";
 import {registerSchema, RegisterValues} from "../model/schema";
 
-import { Button } from "@/shared/ui/button";
+import { Button } from "@/shared/ui/Buttons/button";
 import { Input } from "@/shared/ui/input";
 
 export function RegisterForm() {
