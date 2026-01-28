@@ -52,7 +52,6 @@ export const Footer = () => {
             ))}
           </nav>
 
-          {/* 3. Кнопка "Вгору" (Праворуч) */}
           <div className="flex justify-center md:justify-end w-full md:w-auto">
             <div 
               className="flex gap-4 items-center cursor-pointer group" 

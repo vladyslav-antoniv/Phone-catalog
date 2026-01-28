@@ -5,7 +5,7 @@ import { Link, usePathname } from '@/shared/i18n/navigation';
 import { useTranslations } from "next-intl";
 import { cn } from '@/lib/utils'; 
 
-export function HeaderNavbar({ className }: { className?: string }) {
+export function HeaderNavbar({ className, onClick }: { className?: string; onClick?: () => void }) {
   const pathname = usePathname(); 
   const t = useTranslations('Navigation');
 
@@ -27,6 +27,7 @@ export function HeaderNavbar({ className }: { className?: string }) {
           <li key={item.href}>
             <Link
               href={item.href}
+              onClick={onClick}
               className={cn(
                 'hover:text-foreground transition-colors py-2 border-b-2 border-transparent',
                 isActive && 'text-foreground border-foreground'

@@ -1,7 +1,14 @@
 import React from 'react';
-// import { CreateProduct } from 
+import { CreateProduct } from '@/pages/ProductPage'
 
-async function Page({ params }: { params: Promise<{ slug: string }> }) {
+type Props = {
+  params: Promise<{
+    category: string;
+    slug: string;
+  }>
+};
+
+async function Page({ params }: Props) {
   const { slug } = await params;
 
   return (

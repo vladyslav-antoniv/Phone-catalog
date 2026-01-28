@@ -38,6 +38,6 @@
     ".next/types/**/*.ts",
     ".next/dev/types/**/*.ts",
     "**/*.mts"
-  ],
+, "src/4-shared/ui/5-ProductsCarousel"  ],
   "exclude": ["node_modules"]
 }

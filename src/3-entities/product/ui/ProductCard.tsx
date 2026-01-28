@@ -15,7 +15,7 @@ type ProductProps = {
 
 export function ProductCard({ product }: ProductProps) {
   const dispatch = useAppDispatch();
-  const link = `/product/${product.itemId}`;
+  const link = `/en/${product.category}/${product.itemId}`;
 
   // Selectors
   const { items: cartItems } = useAppSelector((state) => state.cart);

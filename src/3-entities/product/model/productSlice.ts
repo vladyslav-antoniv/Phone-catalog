@@ -59,9 +59,17 @@ export const getProductsStore = createAsyncThunk('products/get', async () => {
 
 export const getProductById = createAsyncThunk(
   'products/getById',
-  async ({ id }: { id: string | number }) => {
-    return await getProductDetails(id);
-  },
+  async ({ id, table }: { id: string; table: string }, { rejectWithValue }) => {
+    try {
+      // Your existing API call logic...
+      // const response = await ...
+      return await getProductDetails(id);
+    } catch (error) {
+      return rejectWithValue(error);
+    }
+  }
+  //   return await getProductDetails(id);
+  // },
 );
 
 export const getProductByIdForCart = createAsyncThunk(

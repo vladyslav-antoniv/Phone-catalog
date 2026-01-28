@@ -58,7 +58,10 @@ export function Header() {
         <div className="absolute top-full left-0 w-full h-[calc(100vh-100%)] bg-background flex flex-col md:hidden border-t border-border border-2">
           
           <div className="flex flex-1 flex-col items-center justify-start mt-10 gap-8">
-            <HeaderNavbar className="flex flex-col gap-6 items-center " />
+            <HeaderNavbar 
+            className="flex flex-col gap-6 items-center " 
+            onClick={() => setIsMenuOpen(false)}
+            />
             <Link 
               href={href}
               className="flex items-center justify-center"
