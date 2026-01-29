@@ -43,7 +43,7 @@ export function BreadCrumbs() {
       <BreadcrumbList>
         <BreadcrumbItem>
           <BreadcrumbLink asChild>
-            <Link href="/">
+            <Link href="/en">
               <Home className="h-4 w-4" />
             </Link>
           </BreadcrumbLink>
